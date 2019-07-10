@@ -25,7 +25,7 @@
                 <th>Цена</th>
                 </thead>
                 <tbody>
-                @foreach($category->products as $product)
+                @foreach($products as $product)
                     <tr>
                         <td>{{ $product->title }}</td>
                         <td>{{ $product->depth }}</td>
@@ -36,9 +36,15 @@
                         </td>
                     </tr>
                 @endforeach
-                {{ $category->products->paginate(20)->links() }}
                 </tbody>
             </table>
+            {{ $products->links() }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            {!! $category->short_description !!}
         </div>
     </div>
 @stop

@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TOO "KazMetallStal-Almaty"</title>
 
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+{{--    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">--}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
@@ -62,7 +66,7 @@
                         </div>
 
                         <div class="col-md-3" style="padding: 20px 10px;">
-                            <button style="width: 80%;" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
+                            <button style="width: 80%;" id="main-lead-btn" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
                         </div>
                     </div>
 
@@ -70,7 +74,7 @@
                         <div class="col-md-6">
                             <div class="main-menu">
                                 <nav class="nav">
-                                    <a class="nav-link active" href="#">Главная</a>
+                                    <a class="nav-link active" href="/">Главная</a>
                                     <a class="nav-link" href="#">О компании</a>
                                     <a class="nav-link" href="#">Контакты</a>
                                 </nav>
@@ -123,30 +127,37 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="form-group">
-                    <label for="first_name">Имя</label>
-                    <input type="text" name="first_name" id="first_name" class="form-control">
-                </div>
+                <form action="{{ route('lead.post') }}" method="post">
+                    @csrf
+                    <div class="form-group">
+                        <label for="first_name">Имя</label>
+                        <input type="text" name="first_name" required id="first_name" class="form-control">
+                    </div>
 
-                <div class="form-group">
-                    <label for="phone_number">Телефон</label>
-                    <input type="text" name="phone_number" id="phone_number" class="form-control">
-                </div>
+                    <div class="form-group">
+                        <label for="phone_number">Телефон</label>
+                        <input type="text" name="phone_number" required id="phone_number" class="form-control">
+                    </div>
 
-                <div class="form-group">
-                    <label for="comments">Комментарии (* не обязательно)</label>
-                    <textarea name="comments" id="comments" class="form-control" cols="30" rows="3"></textarea>
-                </div>
+                    <div class="form-group">
+                        <label for="comments">Комментарии (* не обязательно)</label>
+                        <textarea name="comments" id="comments" class="form-control" cols="30" rows="3"></textarea>
+                    </div>
 
-                <input type="text" name="product_id" id="product_id" value="0">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Отправить заявку!</button>
+                    <div class="form-group">
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" name="lead">Отправить заявку!</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
 <script src="{{ asset('js/jquery.min.js') }}"></script>
-<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+{{--<script src="{{ asset('js/bootstrap.min.js') }}"></script>--}}
+{{--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>--}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="{{ asset('js/my.js') }}"></script>
 </html>
