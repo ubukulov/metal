@@ -32,7 +32,7 @@
                         <td>{{ $product->gost }}</td>
                         <td>{{ $product->mark }}</td>
                         <td>
-                            <button class="btn btn-info" type="button" data-id="{{ $product->id }}" data-toggle="modal" data-target="#modal">Узнать цену</button>
+                            <button class="btn btn-info" type="button" onclick="javascript:setProduct({{ $product->id }});" data-id="{{ $product->id }}" data-toggle="modal" data-target="#modal">Узнать цену</button>
                         </td>
                     </tr>
                 @endforeach

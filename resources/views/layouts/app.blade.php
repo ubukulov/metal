@@ -144,6 +144,8 @@
                         <textarea name="comments" id="comments" class="form-control" cols="30" rows="3"></textarea>
                     </div>
 
+                    <input type="hidden" name="product_id" id="product_id" value="0">
+
                     <div class="form-group">
                         <div class="modal-footer">
                             <button type="submit" class="btn btn-primary" name="lead">Отправить заявку!</button>
