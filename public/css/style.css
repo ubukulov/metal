@@ -67,7 +67,8 @@
 /* Custom CSS Styles */
 #cssmenu {
     width: 100%;
-    background: #333333;
+    /*background: #333333;*/
+    background: #f5f5f5;
     font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
     zoom: 1;
     font-size: 12px;
@@ -96,7 +97,7 @@
 }
 #cssmenu > ul > li > a {
     border-right: 4px solid #1b9bff;
-    color: #ffffff;
+    color: #000;
 }
 #cssmenu > ul > li > a:hover {
     color: #ffffff;
@@ -199,4 +200,21 @@ body {
 }
 .nav-link {
     padding: 20px !important;
+}
+.top-phones {
+    list-style: none;
+    display: flex;
+    padding: 30px 10px 10px;
+    font-size: 14px;
+}
+    .top-phones li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+.left-side {
+    background: #f5f5f5;
+}
+.footer {
+    padding: 3% 0;
+    border-top: 1px solid #ccc;
 }

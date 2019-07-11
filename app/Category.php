@@ -81,4 +81,10 @@ class Category extends Model
     {
         return $this->hasMany('App\Product', 'category_id');
     }
+
+    public function getProducts()
+    {
+        $products = Product::where(['category_id' => $this->id])->paginate(20);
+        return $products;
+    }
 }

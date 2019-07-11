@@ -20,9 +20,15 @@ class IndexController extends BaseController
         }
 
         if (count($category->children) == 0) {
-            return view('catalog-view', compact('category'));
+            $products = $category->getProducts();
+            return view('catalog-view', compact('category', 'products'));
         } else {
             return view('catalog', compact('category'));
         }
+    }
+
+    public function lead(Request $request)
+    {
+        //dd($request->all());
     }
 }

@@ -22,22 +22,29 @@
                 <th>Толщина</th>
                 <th>ГОСТ</th>
                 <th>Марка</th>
-                <th>Действие</th>
+                <th>Цена</th>
                 </thead>
                 <tbody>
-                @foreach($category->products as $product)
+                @foreach($products as $product)
                     <tr>
                         <td>{{ $product->title }}</td>
                         <td>{{ $product->depth }}</td>
                         <td>{{ $product->gost }}</td>
                         <td>{{ $product->mark }}</td>
                         <td>
-                            <button class="btn btn-adn" type="button" data-toggle="modal" data-target="#exampleModal">Узнать цену</button>
+                            <button class="btn btn-info" type="button" data-id="{{ $product->id }}" data-toggle="modal" data-target="#modal">Узнать цену</button>
                         </td>
                     </tr>
                 @endforeach
                 </tbody>
             </table>
+            {{ $products->links() }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            {!! $category->short_description !!}
         </div>
     </div>
 @stop
