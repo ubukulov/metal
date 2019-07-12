@@ -70,7 +70,7 @@ class IndexController extends BaseController
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=utf-8\r\n";
 
-        $headers .= "From: Новая заявка <info@metaloprokat.kz>\r\n";
+        $headers .= "From: Новая заявка <order@metaloprokat.kz>\r\n";
         mail($to, $subject, $message, $headers);
         return redirect()->back();
     }
