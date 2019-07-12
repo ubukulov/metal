@@ -1,4 +1,4 @@
 function setProduct(id = 0)
 {
-    $("#product_id").val(id);
+    document.getElementById('product_id').value = id;
 }
