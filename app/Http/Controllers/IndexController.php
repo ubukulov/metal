@@ -37,6 +37,10 @@ class IndexController extends BaseController
         if ($product_id != 0) {
             $product = Product::find($product_id);
             $p_title = $product->title;
+            if (!empty($product->depth)) $p_title .= ", Толщина: ".$product->depth;
+            if (!empty($product->diameter)) $p_title .= ", Ширина: ".$product->diameter;
+            if (!empty($product->gost)) $p_title .= ", ГОСТ: ".$product->gost;
+            if (!empty($product->mark)) $p_title .= ", Марка: ".$product->mark;
             $message = "
             <html>
                 <head>
@@ -70,7 +74,7 @@ class IndexController extends BaseController
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=utf-8\r\n";
 
-        $headers .= "From: Новая заявка <info@metaloprokat.kz>\r\n";
+        $headers .= "From: <info@metaloprokat.kz>\r\n";
         mail($to, $subject, $message, $headers);
         return redirect()->back();
     }

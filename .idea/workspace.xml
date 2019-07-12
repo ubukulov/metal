@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74309b5b-02b6-405e-bc5a-52abfea8fa2e" name="Default Changelist" comment="" />
+    <list default="true" id="74309b5b-02b6-405e-bc5a-52abfea8fa2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="64" column="14" lean-forward="true" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
+            <state relative-caret-position="163">
+              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
               <folding>
                 <element signature="e#40#57#0#PHP" expanded="true" />
               </folding>
@@ -332,12 +334,12 @@
       <workItem from="1562588909589" duration="6621000" />
       <workItem from="1562690273190" duration="13000" />
       <workItem from="1562716379056" duration="2353000" />
-      <workItem from="1562902506284" duration="2127000" />
+      <workItem from="1562902506284" duration="2910000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36161000" />
+    <option name="totallyTimeSpent" value="36944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -493,8 +495,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="64" column="14" lean-forward="true" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
+        <state relative-caret-position="163">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
           <folding>
             <element signature="e#40#57#0#PHP" expanded="true" />
           </folding>
