@@ -75,8 +75,9 @@
                             <div class="main-menu">
                                 <nav class="nav">
                                     <a class="nav-link active" href="/">Главная</a>
-                                    <a class="nav-link" href="#">О компании</a>
-                                    <a class="nav-link" href="#">Контакты</a>
+                                    @foreach($pages as $page)
+                                    <a class="nav-link" href="{{ $page->url() }}">{{ $page->title }}</a>
+                                    @endforeach
                                 </nav>
                             </div>
                         </div>

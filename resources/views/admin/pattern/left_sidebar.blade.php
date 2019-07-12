@@ -46,6 +46,15 @@
                 </a>
             </li>
 
+            <li>
+                <a href="{{ route('page.index') }}">
+                    <i class="fa fa-th"></i> <span>Страницы</span>
+                    <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
+            </span>
+                </a>
+            </li>
+
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-pie-chart"></i>
