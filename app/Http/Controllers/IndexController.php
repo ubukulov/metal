@@ -68,8 +68,9 @@ class IndexController extends BaseController
             </html>    
             ";
         }
-        $to = 'info@metaloprokat.kz' . ', ';
-        $to .= 'kairat_ubukulov@mail.ru';
+        $to = 'info@metaloprokat.kz';
+//        $to = 'info@metaloprokat.kz' . ', ';
+//        $to .= 'kairat_ubukulov@mail.ru';
         $subject = 'Новая заявка';
         $headers = "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=utf-8\r\n";
