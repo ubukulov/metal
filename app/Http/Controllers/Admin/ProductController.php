@@ -28,22 +28,22 @@ class ProductController extends Controller
 //            if (!empty($arr[4])) $slug_title .= $arr[4]." ";
 //            if (!empty($arr[5])) $slug_title .= $arr[5]." ";
             $slug = Str::slug(rtrim($slug_title, " "),"-");
-            Product::create([
-                'title' => $arr[0],
-                'alias' => $slug,
-                'category_id' => 49,
-//                'width' => $arr[2],
-//                'height' => $arr[3],
-//                'length' => $arr[1],
-//                'diameter' => $arr[1],
-//                'depth' => $arr[2],
-                'size' => $arr[1],
-//                'size2' => $arr[2],
-//                'size3' => $arr[3],
-                'gost' => $arr[2],
-                'mark' => $arr[3],
-//                'description' => $arr[2],
-            ]);
+//            Product::create([
+//                'title' => $arr[0],
+//                'alias' => $slug,
+//                'category_id' => 49,
+////                'width' => $arr[2],
+////                'height' => $arr[3],
+////                'length' => $arr[1],
+////                'diameter' => $arr[1],
+////                'depth' => $arr[2],
+//                'size' => $arr[1],
+////                'size2' => $arr[2],
+////                'size3' => $arr[3],
+//                'gost' => $arr[2],
+//                'mark' => $arr[3],
+////                'description' => $arr[2],
+//            ]);
         }
         $products = Product::paginate(30);
         return view('admin.product.index', compact('products'));
