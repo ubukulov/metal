@@ -16,6 +16,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
+        	@if(count($products) != 0)
             <table class="table">
                 <thead>
                 <th>Наименование</th>
@@ -55,6 +56,7 @@
                 </tbody>
             </table>
             {{ $products->links() }}
+            @endif
         </div>
     </div>
 
