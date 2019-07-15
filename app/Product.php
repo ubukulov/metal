@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     protected $fillable = [
-        'title', 'category_id', 'alias', 'depth', 'diameter', 'gost', 'mark'
+        'title', 'category_id', 'alias', 'depth', 'diameter', 'gost', 'mark', 'width', 'height', 'size',
+        'length', 'size2', 'description', 'size3'
     ];
 
     protected $dates = ['created_at', 'updated_at'];

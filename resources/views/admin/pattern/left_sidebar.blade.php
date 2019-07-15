@@ -34,14 +34,12 @@
                 <a href="{{ route('category.index') }}">
                     <i class="fa fa-files-o"></i>
                     <span>Категории</span>
-                    <span class="label label-primary pull-right">4</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route('product.index') }}">
                     <i class="fa fa-th"></i> <span>Товары</span>
                     <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
             </span>
                 </a>
             </li>
@@ -50,11 +48,11 @@
                 <a href="{{ route('page.index') }}">
                     <i class="fa fa-th"></i> <span>Страницы</span>
                     <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
             </span>
                 </a>
             </li>
 
+            {{--
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-pie-chart"></i>
@@ -187,7 +185,7 @@
             <li class="header">LABELS</li>
             <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>--}}
         </ul>
     </section>
     <!-- /.sidebar -->
