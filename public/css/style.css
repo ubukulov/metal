@@ -110,12 +110,20 @@
 #cssmenu > ul > li:hover a {
     /*background: #1b9bff;*/
     background: #cccccc;
+    color: #000;
 }
 #cssmenu li {
     position: relative;
 }
 #cssmenu ul li.has-sub > a:after {
     content: '+';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -6px;
+}
+#cssmenu ul li.has-sub > a:hover:after {
+    content: '-';
     position: absolute;
     top: 50%;
     right: 15px;
@@ -138,7 +146,7 @@
     border-radius: 0 3px 3px 0;
 }
 #cssmenu ul ul {
-    border: 1px solid #0082e7;
+    border: 1px solid #ccc;
 }
 #cssmenu ul ul a {
     font-size: 12px;
@@ -148,12 +156,12 @@
     color: #ffffff;
 }
 #cssmenu ul ul li {
-    border-bottom: 1px solid #0082e7;
+    border-bottom: 1px solid #ccc;
 }
 #cssmenu ul ul li:hover > a {
     /*background: #4eb1ff;*/
-    color: #ffffff;
-    background: #f8f8f8;
+    color: #000;
+    background: #f5f5f5;
 }
 #cssmenu.align-right > ul > li > a {
     border-left: 4px solid #1b9bff;
