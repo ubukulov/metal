@@ -17,7 +17,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        /*$file_array = file(public_path()."/files/1.txt");
+        $file_array = file(public_path()."/files/1.txt");
         for ($i=0; $i < count($file_array); $i++) {
             $arr = explode("|", rtrim(rtrim($file_array[$i], "\r\n"), "|"));
             $slug_title = "";
@@ -25,27 +25,27 @@ class ProductController extends Controller
             if (!empty($arr[1])) $slug_title .= $arr[1]." ";
             if (!empty($arr[2])) $slug_title .= $arr[2]." ";
             if (!empty($arr[3])) $slug_title .= $arr[3]." ";
-            if (!empty($arr[4])) $slug_title .= $arr[4]." ";
-            if (!empty($arr[5])) $slug_title .= $arr[5]." ";
-            if (!empty($arr[6])) $slug_title .= $arr[5]." ";
+//            if (!empty($arr[4])) $slug_title .= $arr[4]." ";
+//            if (!empty($arr[5])) $slug_title .= $arr[5]." ";
+//            if (!empty($arr[6])) $slug_title .= $arr[5]." ";
             $slug = Str::slug(rtrim($slug_title, " "),"-");
             Product::create([
                 'title' => $arr[0],
                 'alias' => $slug,
-                'category_id' => 123,
-//                'width' => $arr[2],
+                'category_id' => 156,
+//                'width' => $arr[1],
 //                'height' => $arr[2],
-//                'length' => $arr[1],
-//                'diameter' => $arr[1],
-//                'depth' => $arr[3],
-                'size' => $arr[1],
+//                'length' => $arr[2],
+                'diameter' => $arr[1],
+//                'depth' => $arr[2],
+//                'size' => $arr[1],
 //                'size2' => $arr[2],
 //                'size3' => $arr[3],
                 'gost' => $arr[2],
                 'mark' => $arr[3],
-                'description' => $arr[4],
+//                'description' => $arr[4],
             ]);
-        }*/
+        }
         $products = Product::paginate(30);
         return view('admin.product.index', compact('products'));
     }
