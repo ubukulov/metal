@@ -25,24 +25,25 @@ class ProductController extends Controller
             if (!empty($arr[1])) $slug_title .= $arr[1]." ";
             if (!empty($arr[2])) $slug_title .= $arr[2]." ";
             if (!empty($arr[3])) $slug_title .= $arr[3]." ";
-            if (!empty($arr[4])) $slug_title .= $arr[4]." ";
+//            if (!empty($arr[4])) $slug_title .= $arr[4]." ";
 //            if (!empty($arr[5])) $slug_title .= $arr[5]." ";
 //            if (!empty($arr[6])) $slug_title .= $arr[5]." ";
             $slug = Str::slug(rtrim($slug_title, " "),"-");
             Product::create([
                 'title' => $arr[0],
                 'alias' => $slug,
-                'category_id' => 164,
-                'width' => $arr[2],
-                'height' => $arr[1],
-                'length' => $arr[3],
+                'category_id' => 188,
+//                'width' => $arr[2],
+//                'height' => $arr[1],
+//                'length' => $arr[3],
 //                'diameter' => $arr[1],
+                'fraction' => $arr[1],
 //                'depth' => $arr[1],
 //                'size' => $arr[1],
 //                'size2' => $arr[2],
 //                'size3' => $arr[3],
-//                'gost' => $arr[3],
-                'mark' => $arr[4],
+                'gost' => $arr[2],
+                'mark' => $arr[3],
 //                'description' => $arr[4],
             ]);
         }
