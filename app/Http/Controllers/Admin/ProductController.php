@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Product;
 use App\Category;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class ProductController extends Controller
@@ -32,13 +33,21 @@ class ProductController extends Controller
             Product::create([
                 'title' => $arr[0],
                 'alias' => $slug,
-                'category_id' => 188,
-//                'width' => $arr[2],
-//                'height' => $arr[1],
-//                'length' => $arr[3],
-//                'diameter' => $arr[1],
-                'fraction' => $arr[1],
-//                'depth' => $arr[1],
+                'category_id' => 261,
+//                'wall1' => $arr[1],
+//                'wall2' => $arr[2],
+//                'width' => $arr[1],
+//                'height' => $arr[2],
+                'length' => $arr[1],
+//                'diameter' => $arr[2],
+//                'diameter_vn' => $arr[1],
+//                'buxta' => $arr[3],
+//                'quantity' => $arr[2],
+//                'skrutka' => $arr[2],
+//                'frac' => $arr[1],
+//                'cross_section' => $arr[1], // сечение жил
+//                'rated_voltage' => $arr[3], // номинальные напряжение
+//                'depth' => $arr[3],
 //                'size' => $arr[1],
 //                'size2' => $arr[2],
 //                'size3' => $arr[3],
