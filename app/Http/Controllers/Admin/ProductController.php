@@ -19,27 +19,27 @@ class ProductController extends Controller
     public function index()
     {
         $file_array = file(public_path()."/files/1.txt");
-        /*for ($i=0; $i < count($file_array); $i++) {
+        for ($i=0; $i < count($file_array); $i++) {
             $arr = explode("|", rtrim(rtrim($file_array[$i], "\r\n"), "|"));
             $slug_title = "";
             if (!empty($arr[0])) $slug_title .= $arr[0]." ";
             if (!empty($arr[1])) $slug_title .= $arr[1]." ";
             if (!empty($arr[2])) $slug_title .= $arr[2]." ";
             if (!empty($arr[3])) $slug_title .= $arr[3]." ";
-            if (!empty($arr[4])) $slug_title .= $arr[4]." ";
+//            if (!empty($arr[4])) $slug_title .= $arr[4]." ";
 //            if (!empty($arr[5])) $slug_title .= $arr[5]." ";
 //            if (!empty($arr[6])) $slug_title .= $arr[5]." ";
             $slug = Str::slug(rtrim($slug_title, " "),"-");
             Product::create([
                 'title' => $arr[0],
                 'alias' => $slug,
-                'category_id' => 347,
+                'category_id' => 361,
 //                'wall1' => $arr[1],
 //                'wall2' => $arr[2],
-//                'width' => $arr[1],
-//                'height' => $arr[2],
+                'width' => $arr[2],
+//                'height' => $arr[1],
 //                'length' => $arr[3],
-                'diameter' => $arr[1],
+//                'diameter' => $arr[1],
 //                'diameter_vn' => $arr[2],
 //                'buxta' => $arr[3],
 //                'quantity' => $arr[2],
@@ -47,7 +47,7 @@ class ProductController extends Controller
 //                'frac' => $arr[1],
 //                'cross_section' => $arr[1], // сечение жил
 //                'rated_voltage' => $arr[3], // номинальные напряжение
-                'depth' => $arr[2],
+                'depth' => $arr[1],
 //                'size' => $arr[1],
 //                'size2' => $arr[2],
 //                'size3' => $arr[3],
@@ -55,7 +55,7 @@ class ProductController extends Controller
                 'mark' => $arr[4],
 //                'description' => $arr[5],
             ]);
-        }*/
+        }
         $products = Product::paginate(30);
         return view('admin.product.index', compact('products'));
     }
