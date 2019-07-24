@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74309b5b-02b6-405e-bc5a-52abfea8fa2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/files/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/files/1.txt" afterDir="false" />
@@ -63,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/catalog-view.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
+            <state relative-caret-position="765">
               <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
             </state>
           </provider>
@@ -72,7 +71,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="das://31a03b97-6243-4139-aa48-a7c748abcc79/schema/metal/table/categories">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state projectRestartId="be90ab82-fc8a-45cb-93c7-93f232c26b57">
+            <state projectRestartId="2dba1fc5-88a7-44dc-9680-ce5b87edc287">
               <filtering>
                 <filter text="" />
               </filtering>
@@ -337,17 +336,18 @@
       <workItem from="1563796827915" duration="1683000" />
       <workItem from="1563897981266" duration="25000" />
       <workItem from="1563902145183" duration="2767000" />
+      <workItem from="1563988915925" duration="7676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121501000" />
+    <option name="totallyTimeSpent" value="129177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22163388" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2246596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -650,23 +650,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Product.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/catalog-view.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="66" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+        <state relative-caret-position="765">
+          <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/catalog-view.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
+        <state relative-caret-position="187">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="das://31a03b97-6243-4139-aa48-a7c748abcc79/schema/metal/table/categories">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="be90ab82-fc8a-45cb-93c7-93f232c26b57">
+        <state projectRestartId="2dba1fc5-88a7-44dc-9680-ce5b87edc287">
           <filtering>
             <filter text="" />
           </filtering>
