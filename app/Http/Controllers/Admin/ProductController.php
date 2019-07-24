@@ -26,34 +26,35 @@ class ProductController extends Controller
             if (!empty($arr[1])) $slug_title .= $arr[1]." ";
             if (!empty($arr[2])) $slug_title .= $arr[2]." ";
             if (!empty($arr[3])) $slug_title .= $arr[3]." ";
-//            if (!empty($arr[4])) $slug_title .= $arr[4]." ";
+            if (!empty($arr[4])) $slug_title .= $arr[4]." ";
 //            if (!empty($arr[5])) $slug_title .= $arr[5]." ";
 //            if (!empty($arr[6])) $slug_title .= $arr[5]." ";
             $slug = Str::slug(rtrim($slug_title, " "),"-");
             Product::create([
                 'title' => $arr[0],
                 'alias' => $slug,
-                'category_id' => 361,
+                'category_id' => 380,
 //                'wall1' => $arr[1],
 //                'wall2' => $arr[2],
-                'width' => $arr[2],
+//                'width' => $arr[2],
 //                'height' => $arr[1],
-//                'length' => $arr[3],
+//                'length' => $arr[1],
 //                'diameter' => $arr[1],
 //                'diameter_vn' => $arr[2],
 //                'buxta' => $arr[3],
+                'step' => $arr[2],
 //                'quantity' => $arr[2],
 //                'skrutka' => $arr[2],
 //                'frac' => $arr[1],
 //                'cross_section' => $arr[1], // сечение жил
 //                'rated_voltage' => $arr[3], // номинальные напряжение
-                'depth' => $arr[1],
-//                'size' => $arr[1],
+                'depth' => $arr[3],
+                'size' => $arr[1],
 //                'size2' => $arr[2],
 //                'size3' => $arr[3],
-                'gost' => $arr[3],
-                'mark' => $arr[4],
-//                'description' => $arr[5],
+                'gost' => $arr[4],
+                'mark' => $arr[5],
+//                'description' => $arr[2],
             ]);
         }
         $products = Product::paginate(30);
