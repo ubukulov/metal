@@ -20,6 +20,11 @@
                                 @if($child->hasChildren())
                                     @foreach($child->children as $grandson)
                                         <option @if(Session::get('rem_cat_id') == $grandson->id) selected @endif value="{{ $grandson->id }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----{{ $grandson->title }}</option>
+                                        @if($grandson->hasChildren())
+                                            @foreach($grandson->children as $child_grandsons)
+                                                <option @if(Session::get('rem_cat_id') == $child_grandsons->id) selected @endif value="{{ $child_grandsons->id }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----{{ $child_grandsons->title }}</option>
+                                            @endforeach
+                                        @endif
                                     @endforeach
                                 @endif
                             @endforeach

@@ -33,15 +33,15 @@ class ProductController extends Controller
             Product::create([
                 'title' => $arr[0],
                 'alias' => $slug,
-                'category_id' => 442,
+                'category_id' => 447,
 //                'wall1' => $arr[1],
 //                'wall2' => $arr[2],
-                'width' => $arr[1],
+//                'width' => $arr[1],
 //                'height' => $arr[2],
 //                'length' => $arr[2],
 //                'jumper' => $arr[3], // Перемычка
-//                'diameter' => $arr[1],
-//                'diameter_vn' => $arr[2],
+                'diameter' => $arr[1],
+                'diameter_vn' => $arr[2],
 //                'buxta' => $arr[3],
 //                'step' => $arr[3],
 //                'quantity' => $arr[3],
@@ -49,13 +49,13 @@ class ProductController extends Controller
 //                'frac' => $arr[1],
 //                'cross_section' => $arr[1], // сечение жил
 //                'rated_voltage' => $arr[3], // номинальные напряжение
-                'depth' => $arr[2],
+//                'depth' => $arr[3],
 //                'size' => $arr[1],
 //                'size2' => $arr[2],
 //                'size3' => $arr[3],
                 'gost' => $arr[3],
                 'mark' => $arr[4],
-//                'description' => $arr[6],
+//                'description' => $arr[4],
             ]);
         }
         $products = Product::paginate(30);
