@@ -33,28 +33,29 @@ class ProductController extends Controller
             Product::create([
                 'title' => $arr[0],
                 'alias' => $slug,
-                'category_id' => 447,
+                'category_id' => 189,
 //                'wall1' => $arr[1],
 //                'wall2' => $arr[2],
-//                'width' => $arr[1],
+//                'width' => $arr[3],
 //                'height' => $arr[2],
-//                'length' => $arr[2],
+//                'length' => $arr[3],
 //                'jumper' => $arr[3], // Перемычка
-                'diameter' => $arr[1],
-                'diameter_vn' => $arr[2],
+//                'diameter' => $arr[1],
+//                'diameter_vn' => $arr[2],
+//                'diameter_vn2' => $arr[3],
 //                'buxta' => $arr[3],
 //                'step' => $arr[3],
 //                'quantity' => $arr[3],
 //                'skrutka' => $arr[2],
-//                'frac' => $arr[1],
+                'frak' => $arr[1],
 //                'cross_section' => $arr[1], // сечение жил
 //                'rated_voltage' => $arr[3], // номинальные напряжение
-//                'depth' => $arr[3],
+                //'depth' => $arr[1],
 //                'size' => $arr[1],
 //                'size2' => $arr[2],
 //                'size3' => $arr[3],
-                'gost' => $arr[3],
-                'mark' => $arr[4],
+                'gost' => $arr[2],
+                'mark' => $arr[3],
 //                'description' => $arr[4],
             ]);
         }
