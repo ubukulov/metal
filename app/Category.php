@@ -17,7 +17,7 @@ class Category extends Model
     protected $table = 'categories';
 
     protected $fillable = [
-        'title', 'alias', 'parent_id', 'image', 'lft', 'rgt', 'active', 'short_description'
+        'title', 'alias', 'parent_id', 'image', 'lft', 'rgt', 'active', 'short_description', 'position'
     ];
 
     protected $dates = ['created_at', 'updated_at'];

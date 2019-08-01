@@ -18,7 +18,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $file_array = file(public_path()."/files/1.txt");
+        /*$file_array = file(public_path()."/files/1.txt");
         for ($i=0; $i < count($file_array); $i++) {
             $arr = explode("|", rtrim(rtrim($file_array[$i], "\r\n"), "|"));
             $slug_title = "";
@@ -58,7 +58,7 @@ class ProductController extends Controller
                 'mark' => $arr[3],
 //                'description' => $arr[4],
             ]);
-        }
+        }*/
         $products = Product::paginate(30);
         return view('admin.product.index', compact('products'));
     }

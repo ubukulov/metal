@@ -2,7 +2,7 @@
 @section('content')
     {!! Breadcrumbs::render('catalog.view', $category) !!}
     <div class="row">
-        @foreach($category->children as $cat)
+        @foreach($category->children->sortby('position') as $cat)
             <div class="col-md-4 cat-block" style="margin-bottom: 20px;">
                 <div class="cat-im">
                     <a href="{{ $cat->url() }}"><img src="{{ $cat->image() }}" alt=""></a>
