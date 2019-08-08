@@ -294,5 +294,8 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="svetilo.loc" />
+    <orderEntry type="module" module-name="svetilo.loc" />
+    <orderEntry type="module" module-name="svetilo.loc" />
   </component>
 </module>

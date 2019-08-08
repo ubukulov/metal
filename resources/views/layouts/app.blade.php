@@ -66,34 +66,37 @@
         <div class="col-md-9">
             <div class="content">
                 <div class="header">
-                    <div class="row">
-                        <div class="col-md-9">
-                            <ul class="top-phones">
-                                <li><a href="tel:+7 (727) 222-01-28">+7 (727) 222-01-28</a></li>
-                                <li><a href="tel:+7 (771) 171-44-25">+7 (771) 171-44-25</a></li>
-                                <li><a href="tel:+7 (771) 171-44-26">+7 (771) 171-44-26</a></li>
-                                <li><a href="tel:+7 (771) 171-44-27">+7 (771) 171-44-27</a></li>
-                            </ul>
-                        </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3" style="padding: 20px 10px;">
+                                <button style="width: 80%;" id="main-lead-btn" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
+                            </div>
 
-                        <div class="col-md-3" style="padding: 20px 10px;">
-                            <button style="width: 80%;" id="main-lead-btn" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="main-menu">
-                                <nav class="nav">
-                                    <a class="nav-link active" href="/">Главная</a>
-                                    @foreach($pages as $page)
-                                    <a class="nav-link" href="{{ $page->url() }}">{{ $page->title }}</a>
-                                    @endforeach
-                                </nav>
+                            <div class="col-md-9">
+                                <ul class="top-phones">
+                                    <li><a href="tel:+7 (727) 222-01-28">+7 (727) 222-01-28</a></li>
+                                    <li><a href="tel:+7 (771) 171-44-25">+7 (771) 171-44-25</a></li>
+                                    <li><a href="tel:+7 (771) 171-44-26">+7 (771) 171-44-26</a></li>
+                                    <li><a href="tel:+7 (771) 171-44-27">+7 (771) 171-44-27</a></li>
+                                    <li>Email: <a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-md-6">
 
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="main-menu">
+                                    <nav class="nav">
+                                        <a class="nav-link active" href="/">Главная</a>
+                                        @foreach($pages as $page)
+                                            <a class="nav-link" href="{{ $page->url() }}">{{ $page->title }}</a>
+                                        @endforeach
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
                         </div>
                     </div>
                 </div>
