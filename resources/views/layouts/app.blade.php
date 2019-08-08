@@ -40,13 +40,13 @@
                                 <li class='has-sub'><a href='{{ $cat->url() }}'><span>{{ $cat->title }}</span></a>
                                     @if($cat->hasChildren())
                                         <ul>
-                                            @foreach($cat->children as $child)
+                                            @foreach($cat->children->sortby('position') as $child)
                                                 @if(count($child->children) == 0)
                                                     <li><a href="{{ $child->url() }}">{{ $child->title }}</a></li>
                                                 @else
                                                     <li class='has-sub'><a href='{{ $child->url() }}'><span>{{ $child->title }}</span></a>
                                                         <ul>
-                                                            @foreach($child->children as $grandson)
+                                                            @foreach($child->children->sortby('position') as $grandson)
                                                                 <li><a href="{{ $grandson->url() }}">{{ $grandson->title }}</a></li>
                                                             @endforeach
                                                         </ul>
