@@ -68,11 +68,11 @@
                 <div class="header">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-3" style="padding: 20px 10px;">
-                                <button style="width: 80%;" id="main-lead-btn" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
+                            <div class="col-md-2" style="padding: 20px 10px;">
+                                <button id="main-lead-btn" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
                             </div>
 
-                            <div class="col-md-9">
+                            <div class="col-md-10">
                                 <ul class="top-phones">
                                     <li><a href="tel:+7 (727) 222-01-28">+7 (727) 222-01-28</a></li>
                                     <li><a href="tel:+7 (771) 171-44-25">+7 (771) 171-44-25</a></li>
