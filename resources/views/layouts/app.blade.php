@@ -184,7 +184,7 @@
             company_logo_url: "//static.whatshelp.io/img/flag.png", // URL of company logo (png, jpg, gif)
             greeting_message: "Здравствуйте! Отправьте нам сообщение через любой из мессенджеров.", // Text of greeting message
             call_to_action: "Напишите на WhatsApp", // Call to action
-            position: "right", // Position may be 'right' or 'left'
+            position: "left", // Position may be 'right' or 'left'
         };
         var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
