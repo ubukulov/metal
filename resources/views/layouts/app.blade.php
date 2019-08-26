@@ -49,7 +49,9 @@
         <div class="col-md-3">
             <div class="left-side">
                 <div style="padding: 20px 20px 30px 20px; text-align: center;">
-                    <h4>TOO <br> "KazMetallStal-Almaty"</h4>
+                    <a href="/">
+						<img width="100" src="{{ asset('img/logo.png') }}"
+					</a>
                 </div>
                 <div id='cssmenu'>
                     <ul>
@@ -93,8 +95,6 @@
                             <div class="col-md-10">
                                 <ul class="top-phones">
                                     <li><a href="tel:+7 (727) 222-01-28">+7 (727) 222-01-28</a></li>
-                                    <li><a href="tel:+7 (771) 171-44-25">+7 (771) 171-44-25</a></li>
-                                    <li><a href="tel:+7 (771) 171-44-26">+7 (771) 171-44-26</a></li>
                                     <li><a href="tel:+7 (771) 171-44-27">+7 (771) 171-44-27</a></li>
                                     <li>Email: <a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a></li>
                                 </ul>
