@@ -50,7 +50,7 @@
             <div class="left-side">
                 <div style="padding: 20px 20px 30px 20px; text-align: center;">
                     <a href="/">
-						<img width="100" src="{{ asset('img/logo.png') }}"
+						<img width="200" src="{{ asset('img/logo.png') }}"
 					</a>
                 </div>
                 <div id='cssmenu'>
