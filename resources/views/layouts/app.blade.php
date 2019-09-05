@@ -88,7 +88,7 @@
                 <div class="header">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-2" style="padding: 20px 10px;">
+                            <div class="col-md-2" style="padding: 30px 0px;">
                                 <button id="main-lead-btn" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
                             </div>
 
