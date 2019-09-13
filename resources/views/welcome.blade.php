@@ -1,5 +1,8 @@
 @extends('layouts.app')
 @section('content')
+    <div class="main_banner" style="margin-bottom: 20px;">
+        <img style="max-width: 100%;" src="{{ asset('img/banner1.jpg') }}" alt="">
+    </div>
     <div class="row">
         @foreach($cats as $cat)
             @if($cat->id == 1)
