@@ -14,4 +14,10 @@
             </div>
         @endforeach
     </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            {!! $category->short_description !!}
+        </div>
+    </div>
 @stop
