@@ -71,7 +71,9 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = Category::find($id);
+        $cats = Category::all();
+        return view('admin.category.edit', compact('category', 'cats'));
     }
 
     /**
@@ -83,7 +85,20 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $category = Category::find($id);
+        $category->update($request->all());
+        $category->save();
+
+        if ($request->hasFile('image')) {
+            $file_name = $category->alias.".jpg";
+            $img = \Image::make($request->file('image')->getPathname())->resize(300, 300);
+            $img->save(base_path('public/uploads/category/').$file_name);
+
+            $category->image = $file_name;
+            $category->save();
+        }
+
+        return redirect()->route('category.index');
     }
 
     /**

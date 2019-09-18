@@ -1,0 +1,59 @@
+@extends('admin.admin')
+@section('content')
+    <form action="{{ route('category.update', ['id' => $category->id]) }}" method="post" enctype="multipart/form-data">
+        @csrf
+        @method('PUT')
+        <div class="form-group">
+            <label for="title">Наименование</label>
+            <input class="form-control" required name="title" value="{{ $category->title }}" id="title" placeholder="Введите наименование" type="text">
+        </div>
+
+        <div class="form-group">
+            <label for="parent_id">Родитель</label>
+            <select name="parent_id" class="form-control custom-select d-block w-100" id="parent_id">
+                <option value="0">--- Нет родителя ---</option>
+                @foreach($cats as $cat)
+                    @if($cat->isRoot())
+                        <option @if($category->parent_id == $cat->id) selected @endif value="{{ $cat->id }}">{{ $cat->title }}</option>
+                        @if($cat->hasChildren())
+                            @foreach($cat->children as $child)
+                                <option @if($category->parent_id == $child->id) selected @endif value="{{ $child->id }}">&nbsp;----{{ $child->title }}</option>
+                                @if($child->hasChildren())
+                                    @foreach($child->children as $grandson)
+                                        <option @if($category->parent_id == $grandson->id) selected @endif value="{{ $grandson->id }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----{{ $grandson->title }}</option>
+                                        @if($grandson->hasChildren())
+                                            @foreach($grandson->children as $child_grandsons)
+                                                <option @if($category->parent_id == $child_grandsons->id) selected @endif value="{{ $child_grandsons->id }}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;----{{ $child_grandsons->title }}</option>
+                                            @endforeach
+                                        @endif
+                                    @endforeach
+                                @endif
+                            @endforeach
+                        @endif
+                    @endif
+                @endforeach
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="short_description">Короткое описание</label>
+            <textarea name="short_description" class="form-control" id="editor1" cols="30" rows="3">{!! $category->short_description !!}</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="image">Картинка</label>
+            <input type="file" name="image" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <label for="active">Опубликовать</label>
+            <select name="active" class="form-control custom-select d-block w-100" id="active">
+                <option @if($category->active == 1) selected @endif value="1">Да</option>
+                <option @if($category->active == 0) selected @endif value="0">Нет</option>
+            </select>
+        </div>
+
+        <hr>
+        <button class="btn btn-primary" name="add_category" type="submit">Изменить категорию</button>
+    </form>
+@stop

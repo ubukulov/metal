@@ -16,7 +16,9 @@
                         <td>{{ $cat->id }}</td>
                         <td>{{ $cat->title }}</td>
                         <td>{{ $cat->created_at }}</td>
-                        <td></td>
+                        <td>
+                            <a href="{{ route('category.edit', ['id' => $cat->id]) }}"><i class="fa fa-edit"></i>&nbsp;Ред.</a>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>
