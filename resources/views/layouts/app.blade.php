@@ -20,6 +20,7 @@
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/media.css') }}">
 	<script src="//code.jivosite.com/widget.js" data-jv-id="TQpg5fgreN" async></script>
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" >
@@ -88,13 +89,13 @@
                 <div class="header">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-2" style="padding: 30px 0px;">
+                            <div class="col-md-2 lead_btn" style="padding: 30px 0px;">
                                 <button id="main-lead-btn" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
                             </div>
 
                             <div class="col-md-10">
                                 <ul class="top-phones">
-                                    <li><a href="tel:+7 (727) 222-01-28" style="font-size: 18px;">+7 (727) 222-01-28</a></li>
+                                    <li><a href="tel:+7 (727) 222-01-28">+7 (727) 222-01-28</a></li>
                                     <!--<li><a href="tel:+7 (771) 171-44-27">+7 (771) 171-44-27</a></li>-->
                                     <!--<li><a href="tel:+7 (771) 171-44-28">+7 (771) 171-44-28</a></li>-->
                                     <li><a href="tel:+7 (771) 171-44-26">+7 (771) 171-44-26</a></li>

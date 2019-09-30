@@ -1,0 +1,23 @@
+@media(min-width: 320px) and (max-width: 767px) {
+    .top-phones {
+        list-style: none;
+         display: block;
+        padding: 30px 10px 10px;
+        font-size: 14px;
+    }
+    .top-phones li {
+        margin-left: 4px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .lead_btn {
+        text-align: center;
+    }
+    .nav-link {
+        display: block;
+        padding: 1rem 0.4rem !important;
+    }
+    .cat-title {
+        text-align: center;
+    }
+}
