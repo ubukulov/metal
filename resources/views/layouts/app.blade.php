@@ -96,8 +96,8 @@
                             <div class="col-md-10">
                                 <ul class="top-phones">
                                     <li><a href="tel:+7 (727) 222-01-28">+7 (727) 222-01-28</a></li>
-                                    <!--<li><a href="tel:+7 (771) 171-44-27">+7 (771) 171-44-27</a></li>-->
-                                    <!--<li><a href="tel:+7 (771) 171-44-28">+7 (771) 171-44-28</a></li>-->
+                                    <li><a href="tel:+7 (771) 171-44-27">+7 (771) 171-44-27</a></li>
+                                    <li><a href="tel:+7 (771) 171-44-28">+7 (771) 171-44-28</a></li>
                                     <li><a href="tel:+7 (771) 171-44-26">+7 (771) 171-44-26</a></li>
                                     <li>Email: <a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a></li>
                                 </ul>
