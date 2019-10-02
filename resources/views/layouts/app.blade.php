@@ -106,7 +106,7 @@
                                 </div>
 
                                 <div class="ot_z">
-                                    <span>Отдел по заключение контракта</span><br>
+                                    <span>Отдел по заключению контрактов</span><br>
                                     <i class="fas fa-mobile-alt"></i>&nbsp;<a href="tel:+7 (771) 171-44-28">+7 (771) 171-44-28</a>
                                 </div>
 
