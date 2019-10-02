@@ -238,6 +238,7 @@ body {
 .top_contancts div {
     float: left;
     width: 25%;
+    max-width: 100%;
 }
 .top_contancts i {
     color: #C5C6CA;
