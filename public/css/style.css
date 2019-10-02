@@ -232,3 +232,13 @@ body {
     padding: 3% 0;
     border-top: 1px solid #ccc;
 }
+.top_contancts {
+    padding: 20px 0px;
+}
+.top_contancts div {
+    float: left;
+    width: 25%;
+}
+.top_contancts i {
+    color: #C5C6CA;
+}

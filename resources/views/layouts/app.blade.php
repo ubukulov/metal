@@ -16,7 +16,6 @@
 
 {{--    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">--}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -93,14 +92,28 @@
                                 <button id="main-lead-btn" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
                             </div>
 
-                            <div class="col-md-10">
-                                <ul class="top-phones">
-                                    <li><a href="tel:+7 (727) 222-01-28">+7 (727) 222-01-28</a></li>
-                                    <li><a href="tel:+7 (771) 171-44-27">+7 (771) 171-44-27</a></li>
-                                    <li><a href="tel:+7 (771) 171-44-28">+7 (771) 171-44-28</a></li>
-                                    <li><a href="tel:+7 (771) 171-44-26">+7 (771) 171-44-26</a></li>
-                                    <li>Email: <a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a></li>
-                                </ul>
+                            <div class="col-md-10 top_contancts">
+                                <div class="pr">
+                                    <span>Приемная</span> <br>
+                                    <i class="fas fa-tty"></i>&nbsp;<a href="tel:+7 (727) 222-01-28">+7 (727) 222-01-28</a>
+                                </div>
+
+                                <div class="ot_p">
+                                    <span>Отдел продаж</span><br>
+                                    <i class="fas fa-mobile-alt"></i>&nbsp;<a href="tel:+7 (771) 171-44-27">+7 (771) 171-44-27</a><br>
+                                    <i class="fas fa-mobile-alt"></i>&nbsp;<a href="tel:+7 (771) 171-44-26">+7 (771) 171-44-26</a><br>
+                                    <i class="fas fa-mobile-alt"></i>&nbsp;<a href="tel:+7 (771) 171-44-25">+7 (771) 171-44-25</a><br>
+                                </div>
+
+                                <div class="ot_z">
+                                    <span>Отдел по заключение контракта</span><br>
+                                    <i class="fas fa-mobile-alt"></i>&nbsp;<a href="tel:+7 (771) 171-44-28">+7 (771) 171-44-28</a>
+                                </div>
+
+                                <div class="em">
+                                    <span>Email:</span> <br>
+                                    <i class="far fa-envelope"></i>&nbsp;<a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a>
+                                </div>
                             </div>
                         </div>
 
