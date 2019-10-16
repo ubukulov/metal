@@ -100,7 +100,7 @@
 
                                 <div class="ot_p">
                                     <span>Отдел продаж</span><br>
-                                    <i class="fas fa-mobile-alt"></i>&nbsp;<a href="tel:+7 (771) 171-44-27">+7 (771) 171-44-27</a><br>
+                                    <!--<i class="fas fa-mobile-alt"></i>&nbsp;<a href="tel:+7 (771) 171-44-27">+7 (771) 171-44-27</a><br>-->
                                     <i class="fas fa-mobile-alt"></i>&nbsp;<a href="tel:+7 (771) 171-44-26">+7 (771) 171-44-26</a><br>
                                     <i class="fas fa-mobile-alt"></i>&nbsp;<a href="tel:+7 (771) 171-44-25">+7 (771) 171-44-25</a><br>
                                 </div>
