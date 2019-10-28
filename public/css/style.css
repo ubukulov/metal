@@ -116,6 +116,9 @@ header .header .pr button {
   margin: 0 auto;
   max-width: 100%;
 }
+.footer_content .nav-link {
+  padding: 0px !important;
+}
 .footer_content a {
   color: #fff !important;
 }
