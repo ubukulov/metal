@@ -20,11 +20,12 @@
                     <h2>ТЕЛЕФОНЫ</h2>
                     <div>
                         <i class="fas fa-mobile-alt"></i>&nbsp;Отдел продаж <br>
+                        <a href="tel:+7 (771) 171-44-27">+7 (771) 171-44-27</a><br>
                         <a href="tel:+7 (771) 171-44-25">+7 (771) 171-44-25</a><br>
                         <a href="tel:+7 (771) 171-44-26" style="margin-right: 20px;">+7 (771) 171-44-26</a>
                     </div>
                     <div>
-                        <i class="fas fa-mobile-alt"></i>&nbsp;Отдел продаж <br>
+                        <i class="fas fa-mobile-alt"></i>&nbsp;Отдел по заключению контрактов <br>
                         <a href="tel:+7 (771) 171-44-28" style="margin-right: 20px;">+7 (771) 171-44-28</a>
                     </div>
                 </div>
