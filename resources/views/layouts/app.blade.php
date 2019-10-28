@@ -11,6 +11,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>TOO "KazMetallStal-Almaty"</title>
 	<meta name="google-site-verification" content="6vU62eJpSFGSCW-3Lcx8pCInwjgQ3k8qU7nEgUzEcMo">
 
@@ -19,7 +21,10 @@
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/media.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/slick.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/slick-theme.min.css') }}">
 	<script src="//code.jivosite.com/widget.js" data-jv-id="TQpg5fgreN" async></script>
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" >
@@ -45,123 +50,127 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div id="wrap">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="left-side">
-                <div style="padding: 20px 20px 30px 20px; text-align: center;">
-                    <a href="/">
-						<img width="200" src="{{ asset('img/logo.png') }}"
-					</a>
+    <div class="top_line">
+        <div class="top_content">
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Email:</label>
+                    <a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a>
                 </div>
-                <div id='cssmenu'>
-                    <ul>
-                        @foreach($cats as $cat)
-                            @if($cat->isRoot())
-                                <li class='has-sub'><a href='{{ $cat->url() }}'><span>{{ $cat->title }}</span></a>
-                                    @if($cat->hasChildren())
-                                        <ul>
-                                            @foreach($cat->children->sortby('position') as $child)
-                                                @if(count($child->children) == 0)
-                                                    <li><a href="{{ $child->url() }}">{{ $child->title }}</a></li>
-                                                @else
-                                                    <li class='has-sub'><a href='{{ $child->url() }}'><span>{{ $child->title }}</span></a>
-                                                        <ul>
-                                                            @foreach($child->children->sortby('position') as $grandson)
-                                                                <li><a href="{{ $grandson->url() }}">{{ $grandson->title }}</a></li>
-                                                            @endforeach
-                                                        </ul>
-                                                    </li>
-                                                @endif
-                                            @endforeach
-                                        </ul>
-                                    @endif
-                                </li>
-                            @endif
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-9">
-            <div class="content">
-                <div class="header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-2 lead_btn" style="padding: 30px 0px;">
-                                <button id="main-lead-btn" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
-                            </div>
-
-                            <div class="col-md-10 top_contancts">
-                                <div class="pr">
-                                    <span>Приемная</span> <br>
-                                    <i class="fas fa-tty"></i>&nbsp;<a href="tel:+7 (727) 222-01-28">+7 (727) 222-01-28</a>
-                                </div>
-
-                                <div class="ot_p">
-                                    <span>Отдел продаж</span><br>
-                                    <i class="fas fa-mobile-alt"></i>&nbsp;<a href="tel:+7 (771) 171-44-27">+7 (771) 171-44-27</a><br>
-                                    <i class="fas fa-mobile-alt"></i>&nbsp;<a href="tel:+7 (771) 171-44-26">+7 (771) 171-44-26</a><br>
-                                    <i class="fas fa-mobile-alt"></i>&nbsp;<a href="tel:+7 (771) 171-44-25">+7 (771) 171-44-25</a><br>
-                                </div>
-
-                                <div class="ot_z">
-                                    <span>Отдел по заключению контрактов</span><br>
-                                    <i class="fas fa-mobile-alt"></i>&nbsp;<a href="tel:+7 (771) 171-44-28">+7 (771) 171-44-28</a>
-                                </div>
-
-                                <div class="em">
-                                    <span>Email:</span> <br>
-                                    <i class="far fa-envelope"></i>&nbsp;<a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="main-menu">
-                                    <nav class="nav">
-                                        <a class="nav-link active" href="/">Главная</a>
-                                        @foreach($pages as $page)
-                                            <a class="nav-link" href="{{ $page->url() }}">{{ $page->title }}</a>
-                                        @endforeach
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @yield('content')
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="footer">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div style="padding: 10px 0;">
-                                        TOO "Kazmetallstal-Almaty"
-                                    </div>
-                                    <div>2019&nbsp;&copy;&nbsp;Все правы защищены</div>
-                                </div>
-
-                                <div class="col-md-8">
-                                    <div class="footer-phones" style="text-align: right; padding: 0px 20px;">
-                                        <a href="tel:+7 (727) 222-01-28" style="margin-right: 20px;">+7 (727) 222-01-28</a>
-                                        <a href="tel:+7 (771) 171-44-25">+7 (771) 171-44-25</a><br>
-                                        <a href="tel:+7 (771) 171-44-26" style="margin-right: 20px;">+7 (771) 171-44-26</a>
-                                        <a href="tel:+7 (771) 171-44-27">+7 (771) 171-44-27</a><br>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-6 right">
+                    <a href="https://www.instagram.com/metalloprokat.kz?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtu.be/hyOhlwL-pVc" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/metalloprokat.kz/" target="_blank"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
         </div>
     </div>
+
+    <header>
+        <div class="header">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="/">
+                        <img width="100" src="{{ asset('img/logo.png') }}">
+                    </a>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="main-menu">
+                        <nav class="nav">
+                            <a class="nav-link active" href="/">Главная</a>
+                            @foreach($pages as $page)
+                                <a class="nav-link" href="{{ $page->url() }}">{{ $page->title }}</a>
+                            @endforeach
+                        </nav>
+                        {{--<form class="form-inline my-2 my-lg-0">--}}
+                            {{--<input style="width: 100%;" class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">--}}
+                        {{--</form>--}}
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-right">
+                    <div class="pr">
+                        <p><i class="fas fa-tty"></i>&nbsp;<a href="tel:+7 (727) 222-01-28">+7 (727) 222-01-28</a></p>
+                        <button id="main-lead-btn" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    @if(Route::currentRouteName() == 'home')
+    <div class="row">
+        <div class="col-md-12">
+            <div class="slider">
+                <div class="slider_content">
+                    <img style="max-width: 100%;" src="{{ asset('img/banner2.jpg') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    @endif
+
+    <div id="content">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="left-side">
+                    <div id='cssmenu'>
+                        <ul>
+                            @foreach($cats as $cat)
+                                @if($cat->isRoot())
+                                    <li class='has-sub'><a href='{{ $cat->url() }}'><span>{{ $cat->title }}</span></a>
+                                        @if($cat->hasChildren())
+                                            <ul>
+                                                @foreach($cat->children->sortby('position') as $child)
+                                                    @if(count($child->children) == 0)
+                                                        <li><a href="{{ $child->url() }}">{{ $child->title }}</a></li>
+                                                    @else
+                                                        <li class='has-sub'><a href='{{ $child->url() }}'><span>{{ $child->title }}</span></a>
+                                                            <ul>
+                                                                @foreach($child->children->sortby('position') as $grandson)
+                                                                    <li><a href="{{ $grandson->url() }}">{{ $grandson->title }}</a></li>
+                                                                @endforeach
+                                                            </ul>
+                                                        </li>
+                                                    @endif
+                                                @endforeach
+                                            </ul>
+                                        @endif
+                                    </li>
+                                @endif
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="content">
+                    @yield('content')
+                </div>
+            </div>
+        </div>
+
+        @if(Route::currentRouteName() == 'home')
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="col-md-12">
+                <a href="http://metaloprokat.kz/page/kalkulyator">
+                    <img src="{{ asset('img/calc.jpg') }}" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001038533690/center/76.95560216903688,43.266346950439264/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.955605,43.266193/zoom/16/routeTab/rsType/bus/to/76.955605,43.266193╎KAZMETALLSTAL-ALMATY, торговая компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до KAZMETALLSTAL-ALMATY, торговая компания</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":440,"height":300,"borderColor":"#a3a3a3","pos":{"lat":43.266346950439264,"lon":76.95560216903688,"zoom":16},"opt":{"city":"almaty"},"org":[{"id":"70000001038533690"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        @endif
+    </div>
+
+    @include('pattern.footer')
 </div>
 <!-- Modal -->
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -209,6 +218,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="{{ asset('js/my.js') }}"></script>
+<script src="{{ asset('js/slick.min.js') }}"></script>
 <!-- WhatsHelp.io widget -->
 <script type="text/javascript">
     (function () {
@@ -226,5 +236,14 @@
     })();
 </script>
 <!-- /WhatsHelp.io widget -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider').slick({
+            autoplay: true,
+            arrows : true,
+            dots : false,
+        });
+    });
+</script>
 </body>
 </html>

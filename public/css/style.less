@@ -44,35 +44,40 @@ a {
 .top_line {
   border-bottom: 1px solid #ccc;
   background: #fff;
-}
-.top_line .top_content {
-  width: 1200px;
-  margin: 0 auto;
-  max-width: 100%;
-  padding: 5px 10px;
-}
-.top_line .right {
-  text-align: right;
-}
-.top_line .right a {
-  margin-right: 10px;
+  .top_content {
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 5px 10px;
+  }
+
+  .right {
+    text-align: right;
+    a {
+      margin-right: 10px;
+    }
+  }
 }
 header {
   background: #fff;
   border-bottom: 10px solid #ccc;
-}
-header .header {
-  width: 1200px;
-  margin: 0 auto;
-  max-width: 100%;
-  padding: 10px 10px;
-}
-header .header .pr span {
-  font-size: 10px;
-}
-header .header .pr button {
-  background: #562118;
-  border-color: #562118;
+
+  .header {
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 10px 10px;
+
+    .pr {
+      span{
+        font-size: 10px;
+      }
+      button {
+        background: #562118;
+        border-color: #562118;
+      }
+    }
+  }
 }
 #content {
   width: 1200px;
@@ -82,50 +87,57 @@ header .header .pr button {
   background: #fff;
   padding: 20px 0px;
 }
-.content .top_cats .col-md-4 {
-  padding: 0px;
-  flex: 0 0 30%;
-  max-width: 30%;
-  margin-bottom: 20px;
-}
-.content .cat-block {
-  background: #fff;
-  margin-right: 10px;
-}
-.content .cat-block .cat-im {
-  height: 280px;
-  max-width: 100%;
-}
-.content .cat-block .cat-im img {
-  max-width: 100%;
-}
-.content .cat-block .cat-title {
-  background: #DDD3D1;
-  padding: 10px;
+.content {
+  .top_cats {
+    .col-md-4 {
+      padding: 0px;
+      flex: 0 0 30%;
+      max-width: 30%;
+      margin-bottom: 20px;
+    }
+  }
+  .cat-block {
+    background: #fff;
+    margin-right: 10px;
+
+    .cat-im {
+      height: 280px;
+      max-width: 100%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+    .cat-title {
+      background: #DDD3D1;
+      padding: 10px;
+    }
+  }
 }
 #footer {
   background: url("../img/footer_bg.jpg") center center no-repeat;
   background-size: cover;
 }
 .footer {
-  background: rgba(163, 163, 163, 0.8);
+  background: rgba(163,163,163,0.8);
   color: #fff;
 }
 .footer_content {
   width: 1200px;
   margin: 0 auto;
   max-width: 100%;
-}
-.footer_content a {
-  color: #fff !important;
-}
-.footer_content p {
-  color: #fff !important;
-}
-.footer_content .copyright {
-  border-top: 1px solid #fff;
-  padding: 10px 0px;
-}
-.footer_content .copyright a {
-  margin-right: 20px;
+
+  a {
+    color: #fff !important;
+  }
+  p {
+    color: #fff !important;
+  }
+  .copyright {
+    border-top: 1px solid #fff; padding: 10px 0px;
+
+    a {
+      margin-right: 20px;
+    }
+  }
 }
