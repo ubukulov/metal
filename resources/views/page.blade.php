@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    @if($page->alias == 'o-kompanii')
+    {{--@if($page->alias == 'o-kompanii')
         <style>
             .page {
                 background: url("/img/company_bg.png");
@@ -29,5 +29,5 @@
                 background: rgba(255,255,255,0.7);
             }
         </style>
-    @endif
+    @endif--}}
 @stop

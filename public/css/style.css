@@ -1,6 +1,10 @@
 body {
   overflow-x: hidden;
-  background: #F7F7F7;
+  background: url("../img/company_bg.png");
+  background-size: cover;
+}
+#wrap {
+  background: rgba(255, 255, 255, 0.8);
 }
 a {
   color: #424242;
