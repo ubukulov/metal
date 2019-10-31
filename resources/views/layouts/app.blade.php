@@ -121,6 +121,14 @@
                 <div class="slider_content">
                     <img style="max-width: 100%;" src="{{ asset('img/banner2.jpg') }}" alt="">
                 </div>
+                <div class="slider_content">
+                    <img style="max-width: 100%;" src="{{ asset('img/banner3.png') }}" alt="">
+                </div>
+                <div class="slider_content">
+                    <a href="https://docs.google.com/forms/d/1T9EO3zR-2ljnY3t6kN1YwfepleY5awKgWOl_f4tzZPs/viewform?edit_requested=true" target="_blank">
+                        <img style="max-width: 100%;" src="{{ asset('img/banner4.png') }}" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
