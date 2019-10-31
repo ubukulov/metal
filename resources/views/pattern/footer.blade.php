@@ -34,7 +34,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6">
-                        &copy;&nbsp;TOO "KazMetallStal-Almaty"
+                        &copy;&nbsp;TOO "KazMetallStal-Almaty". Все права защищены. Использование материалов допускается только с письменного разрешения ТОО "KazMetallStal-Almaty"
                     </div>
 
                     <div class="col-md-6 text-right">
