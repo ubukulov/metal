@@ -60,7 +60,8 @@ class PageController extends Controller
      */
     public function edit($id)
     {
-        //
+        $page = Page::findOrFail($id);
+        return view('admin.page.edit', compact('page'));
     }
 
     /**
@@ -72,7 +73,9 @@ class PageController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $page = Page::findOrFail($id);
+        $page->update($request->all());
+        return redirect()->route('page.index');
     }
 
     /**

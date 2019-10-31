@@ -16,7 +16,9 @@
                         <td>{{ $page->id }}</td>
                         <td>{{ $page->title }}</td>
                         <td>{{ $page->alias }}</td>
-                        <td></td>
+                        <td>
+                            <a class="btn btn-primary" href="{{ route('page.edit', ['id' => $page->id]) }}"><i class="fa fa-edit"></i>&nbsp;Ред.</a>
+                        </td>
                     </tr>
                 @endforeach
                 </tbody>
