@@ -6,6 +6,7 @@ use App\Page;
 use Illuminate\Http\Request;
 use View;
 use App\Category;
+use Jenssegers\Agent\Agent;
 
 class BaseController extends Controller
 {
@@ -13,7 +14,9 @@ class BaseController extends Controller
     {
         $cats = Category::where('active', 1)->get()->toTree();
         $pages = Page::all();
+        $agent = new Agent();
         View::share('cats', $cats);
         View::share('pages', $pages);
+        View::share('agent', $agent);
     }
 }

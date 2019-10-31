@@ -18,6 +18,10 @@
         padding: 1rem 0.4rem !important;
     }
     .cat-title {
-        text-align: center;
+        text-align: left;
+        padding: 10px 30px !important;
+    }
+    .cat-im {
+        height: 315px !important;
     }
 }

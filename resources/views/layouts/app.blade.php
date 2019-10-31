@@ -53,15 +53,30 @@
     <div class="top_line">
         <div class="top_content">
             <div class="row">
-                <div class="col-md-6">
-                    <label>Email:</label>
-                    <a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a>
-                </div>
-                <div class="col-md-6 right">
-                    <a href="https://www.instagram.com/metalloprokat.kz?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://youtu.be/hyOhlwL-pVc" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.facebook.com/metalloprokat.kz/" target="_blank"><i class="fab fa-facebook"></i></a>
-                </div>
+                @if($agent->isMobile())
+                    <div class="col-md-12">
+                        <div style="float: left;">
+                            <label>Email:</label><br>
+                            <a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a>
+                        </div>
+
+                        <div style="float: right;">
+                            <a href="https://www.instagram.com/metalloprokat.kz?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://youtu.be/hyOhlwL-pVc" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/metalloprokat.kz/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                @else
+                    <div class="col-md-6">
+                        <label>Email:</label><br>
+                        <a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a>
+                    </div>
+                    <div class="col-md-6 right">
+                        <a href="https://www.instagram.com/metalloprokat.kz?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtu.be/hyOhlwL-pVc" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/metalloprokat.kz/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
@@ -156,14 +171,18 @@
         <div class="row" style="margin-bottom: 20px;">
             <div class="col-md-12">
                 <a href="http://metaloprokat.kz/page/kalkulyator">
-                    <img src="{{ asset('img/calc.jpg') }}" alt="">
+                    <img style="max-width: 100%;" src="{{ asset('img/calc.jpg') }}" alt="">
                 </a>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-6">
+                @if($agent->isMobile())
+                <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001038533690/center/76.95560216903688,43.266346950439264/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div style="max-width: 100%;" class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.955605,43.266193/zoom/16/routeTab/rsType/bus/to/76.955605,43.266193╎KAZMETALLSTAL-ALMATY, торговая компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до KAZMETALLSTAL-ALMATY, торговая компания</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":440,"height":200,"borderColor":"#a3a3a3","pos":{"lat":43.266346950439264,"lon":76.95560216903688,"zoom":16},"opt":{"city":"almaty"},"org":[{"id":"70000001038533690"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+                @else
                 <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001038533690/center/76.95560216903688,43.266346950439264/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.955605,43.266193/zoom/16/routeTab/rsType/bus/to/76.955605,43.266193╎KAZMETALLSTAL-ALMATY, торговая компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до KAZMETALLSTAL-ALMATY, торговая компания</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":440,"height":300,"borderColor":"#a3a3a3","pos":{"lat":43.266346950439264,"lon":76.95560216903688,"zoom":16},"opt":{"city":"almaty"},"org":[{"id":"70000001038533690"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+                @endif
             </div>
             <div class="col-md-6"></div>
         </div>

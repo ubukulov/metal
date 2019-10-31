@@ -115,6 +115,7 @@ header .header .pr button {
   width: 1200px;
   margin: 0 auto;
   max-width: 100%;
+  padding: 10px;
 }
 .footer_content .nav-link {
   padding: 0px !important;
