@@ -115,19 +115,21 @@
     </header>
 
     @if(Route::currentRouteName() == 'home')
-    <div class="row">
-        <div class="col-md-12">
-            <div class="slider">
-                <div class="slider_content">
-                    <img style="max-width: 100%;" src="{{ asset('img/banner2.jpg') }}" alt="">
-                </div>
-                <div class="slider_content">
-                    <img style="max-width: 100%;" src="{{ asset('img/banner3.png') }}" alt="">
-                </div>
-                <div class="slider_content">
-                    <a href="https://docs.google.com/forms/d/1T9EO3zR-2ljnY3t6kN1YwfepleY5awKgWOl_f4tzZPs/viewform?edit_requested=true" target="_blank">
-                        <img style="max-width: 100%;" src="{{ asset('img/banner4.png') }}" alt="">
-                    </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="slider">
+                    <div class="slider_content">
+                        <img style="max-width: 100%;" src="{{ asset('img/banner2.jpg') }}" alt="">
+                    </div>
+                    <div class="slider_content">
+                        <img style="max-width: 100%;" src="{{ asset('img/banner3.png') }}" alt="">
+                    </div>
+                    <div class="slider_content">
+                        <a href="https://docs.google.com/forms/d/1T9EO3zR-2ljnY3t6kN1YwfepleY5awKgWOl_f4tzZPs/viewform?edit_requested=true" target="_blank">
+                            <img style="max-width: 100%;" src="{{ asset('img/banner4.png') }}" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -239,9 +241,9 @@
         </div>
     </div>
 </div>
-<script src="{{ asset('js/jquery.min.js') }}"></script>
+{{--<script src="{{ asset('js/jquery.min.js') }}"></script>--}}
 {{--<script src="{{ asset('js/bootstrap.min.js') }}"></script>--}}
-{{--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>--}}
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="{{ asset('js/my.js') }}"></script>
