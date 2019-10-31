@@ -2,8 +2,9 @@
 @section('content')
     <div class="row">
         <div class="col-md-12">
-            <form action="{{ route('page.update') }}" method="post">
+            <form action="{{ route('page.update', ['id' => $page->id]) }}" method="post">
                 @csrf
+                {{ method_field('PUT') }}
                 <div class="form-group">
                     <label for="title">Наименование</label>
                     <input type="text" name="title" id="title" value="{{ $page->title }}" class="form-control" required>
