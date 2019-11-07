@@ -18,3 +18,4 @@ Route::post('/leads', 'IndexController@lead')->name('lead.post');
 Route::get('/user/create/kairat', 'IndexController@createUser');
 
 Route::get('/page/{alias}', 'IndexController@page')->name('page');
+Route::post('/search', 'IndexController@search')->name('search');

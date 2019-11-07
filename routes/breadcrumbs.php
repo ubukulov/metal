@@ -27,3 +27,9 @@ Breadcrumbs::register('product.index', function ($breadcrumbs, $product) {
     $breadcrumbs->parent('catalog.view', $product->category);
     $breadcrumbs->push($product->title);
 });
+// Search
+Breadcrumbs::register('search', function($breadcrumbs) {
+    $breadcrumbs->parent('homepage');
+    $breadcrumbs->push('Результаты поиска');
+});
+

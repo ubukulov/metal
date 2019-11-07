@@ -98,9 +98,10 @@
                                 <a class="nav-link" href="{{ $page->url() }}">{{ $page->title }}</a>
                             @endforeach
                         </nav>
-                        {{--<form class="form-inline my-2 my-lg-0">--}}
-                            {{--<input style="width: 100%;" class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">--}}
-                        {{--</form>--}}
+                        <form class="form-inline my-2 my-lg-0" method="post" action="{{ route('search') }}">
+                            @csrf
+                            <input style="width: 100%;" name="q" class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+                        </form>
                     </div>
                 </div>
 
