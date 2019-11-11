@@ -121,9 +121,6 @@
             <div class="col-md-12">
                 <div class="slider">
                     <div class="slider_content">
-                        <img style="max-width: 100%;" src="{{ asset('img/banner2.jpg') }}" alt="">
-                    </div>
-                    <div class="slider_content">
                         <img style="max-width: 100%;" src="{{ asset('img/banner3.png') }}" alt="">
                     </div>
                     <div class="slider_content">
