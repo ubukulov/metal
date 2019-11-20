@@ -74,6 +74,12 @@ header .header {
 header .header .pr span {
   font-size: 10px;
 }
+header .header .pr p {
+  margin-bottom: 0px;
+}
+header .header .pr a {
+  margin-right: 10px;
+}
 header .header .pr button {
   background: #562118;
   border-color: #562118;

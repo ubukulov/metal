@@ -50,37 +50,6 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div id="wrap">
-    <div class="top_line">
-        <div class="top_content">
-            <div class="row">
-                @if($agent->isMobile())
-                    <div class="col-md-12">
-                        <div style="float: left;">
-                            <label>Email:</label><br>
-                            <a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a>
-                        </div>
-
-                        <div style="float: right;">
-                            <a href="https://www.instagram.com/metalloprokat.kz?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://youtu.be/hyOhlwL-pVc" target="_blank"><i class="fab fa-youtube"></i></a>
-                            <a href="https://www.facebook.com/metalloprokat.kz/" target="_blank"><i class="fab fa-facebook"></i></a>
-                        </div>
-                    </div>
-                @else
-                    <div class="col-md-6">
-                        <label>Email:</label><br>
-                        <a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a>
-                    </div>
-                    <div class="col-md-6 right">
-                        <a href="https://www.instagram.com/metalloprokat.kz?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://youtu.be/hyOhlwL-pVc" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.facebook.com/metalloprokat.kz/" target="_blank"><i class="fab fa-facebook"></i></a>
-                    </div>
-                @endif
-            </div>
-        </div>
-    </div>
-
     <header>
         <div class="header">
             <div class="row">
@@ -108,6 +77,12 @@
                 <div class="col-md-3 text-right">
                     <div class="pr">
                         <p><i class="fas fa-tty"></i>&nbsp;<a href="tel:+7 (727) 222-01-28">+7 (727) 222-01-28</a></p>
+                        <p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a></p>
+                        <p>
+                            <a href="https://www.instagram.com/metalloprokat.kz?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://youtu.be/hyOhlwL-pVc" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/metalloprokat.kz/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </p>
                         <button id="main-lead-btn" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
                     </div>
                 </div>
