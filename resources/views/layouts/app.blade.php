@@ -76,6 +76,8 @@
 
                 <div class="col-md-3 text-right">
                     <div class="pr">
+                        <p><i class="fas fa-tty"></i>&nbsp;<a href="tel:+7 (700) 347 02 73">+7 (700) 347 02 73</a></p>
+                        <p><i class="fas fa-tty"></i>&nbsp;<a href="tel:+7 (727) 347 02 73">+7 (727) 347 02 73</a></p>
                         <p><i class="fas fa-tty"></i>&nbsp;<a href="tel:+7 (727) 222-01-28">+7 (727) 222-01-28</a></p>
                         <p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a></p>
                         <p>
