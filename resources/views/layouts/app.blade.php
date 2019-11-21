@@ -225,7 +225,7 @@
 <script type="text/javascript">
     (function () {
         var options = {
-            whatsapp: "+77711714427", // WhatsApp number
+            whatsapp: "+77711714428", // WhatsApp number
             company_logo_url: "//static.whatshelp.io/img/flag.png", // URL of company logo (png, jpg, gif)
             greeting_message: "Здравствуйте! Отправьте нам сообщение через любой из мессенджеров.", // Text of greeting message
             call_to_action: "Напишите на WhatsApp", // Call to action
