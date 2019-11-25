@@ -50,131 +50,108 @@
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div id="wrap">
-    <header>
-        <div class="header">
-            <div class="row">
-                <div class="col-md-2">
-                    <a href="/">
-                        <img width="100" src="{{ asset('img/logo.png') }}">
-                    </a>
-                </div>
-
-                <div class="col-md-7">
-                    <div class="main-menu">
-                        <nav class="nav">
-                            <a class="nav-link active" href="/">Главная</a>
-                            @foreach($pages as $page)
-                                <a class="nav-link" href="{{ $page->url() }}">{{ $page->title }}</a>
-                            @endforeach
-                        </nav>
-                        <form class="form-inline my-2 my-lg-0" method="post" action="{{ route('search') }}">
-                            @csrf
-                            <input style="width: 100%;" name="q" class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
-                        </form>
-                    </div>
-                </div>
-
-                <div class="col-md-3 text-right">
-                    <div class="pr">
-                        <p><i class="fas fa-tty"></i>&nbsp;<a href="tel:+7 (700) 347 02 73">+7 (700) 347 02 73</a></p>
-                        <p><i class="fas fa-tty"></i>&nbsp;<a href="tel:+7 (727) 347 02 73">+7 (727) 347 02 73</a></p>
-                        <p><i class="fas fa-tty"></i>&nbsp;<a href="tel:+7 (727) 222 01 28">+7 (727) 222 01 28</a></p>
-                        <p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a></p>
-                        <p>
-                            <a href="https://www.instagram.com/metalloprokat.kz?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://youtu.be/hyOhlwL-pVc" target="_blank"><i class="fab fa-youtube"></i></a>
-                            <a href="https://www.facebook.com/metalloprokat.kz/" target="_blank"><i class="fab fa-facebook"></i></a>
-                        </p>
-                        <button id="main-lead-btn" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    @if(Route::currentRouteName() == 'home')
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <div class="slider">
-                    <div class="slider_content">
-                        <img style="max-width: 100%;" src="{{ asset('img/banner3.png') }}" alt="">
-                    </div>
-                    <div class="slider_content">
-                        <a href="https://docs.google.com/forms/d/1T9EO3zR-2ljnY3t6kN1YwfepleY5awKgWOl_f4tzZPs/viewform?edit_requested=true" target="_blank">
-                            <img style="max-width: 100%;" src="{{ asset('img/banner4.png') }}" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    @endif
+                <header>
+                    <div class="header">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <a href="/">
+                                    <img width="150" src="{{ asset('img/logo.png') }}">
+                                </a>
+                                <a href="{{ asset('files/price.rar') }}" target="_blank">
+                                    <img width="200" src="{{ asset('img/download_price.png') }}" alt="">
+                                </a>
+                            </div>
 
-    <div id="content">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="left-side">
-                    <div id='cssmenu'>
-                        <ul>
-                            @foreach($cats as $cat)
-                                @if($cat->isRoot())
-                                    <li class='has-sub'><a href='{{ $cat->url() }}'><span>{{ $cat->title }}</span></a>
-                                        @if($cat->hasChildren())
-                                            <ul>
-                                                @foreach($cat->children->sortby('position') as $child)
-                                                    @if(count($child->children) == 0)
-                                                        <li><a href="{{ $child->url() }}">{{ $child->title }}</a></li>
-                                                    @else
-                                                        <li class='has-sub'><a href='{{ $child->url() }}'><span>{{ $child->title }}</span></a>
-                                                            <ul>
-                                                                @foreach($child->children->sortby('position') as $grandson)
-                                                                    <li><a href="{{ $grandson->url() }}">{{ $grandson->title }}</a></li>
-                                                                @endforeach
-                                                            </ul>
-                                                        </li>
+                            <div class="col-md-6">
+                                <div class="main-menu">
+                                    <nav class="nav">
+                                        <a class="nav-link active" href="/">Главная</a>
+                                        @foreach($pages as $page)
+                                            <a class="nav-link" href="{{ $page->url() }}">{{ $page->title }}</a>
+                                        @endforeach
+                                    </nav>
+                                    <form class="form-inline my-2 my-lg-0" method="post" action="{{ route('search') }}">
+                                        @csrf
+                                        <input style="width: 100%;" name="q" class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <div class="pr">
+                                    <p><i class="fas fa-tty"></i>&nbsp;<a href="tel:+7 (700) 347 02 73">+7 (700) 347 02 73</a></p>
+                                    <p><i class="fas fa-tty"></i>&nbsp;<a href="tel:+7 (727) 347 02 73">+7 (727) 347 02 73</a></p>
+                                    <p><i class="fas fa-tty"></i>&nbsp;<a href="tel:+7 (727) 222 01 28">+7 (727) 222 01 28</a></p>
+                                    <p><i class="fas fa-envelope"></i>&nbsp;<a href="mailto:info@metaloprokat.kz">info@metaloprokat.kz</a></p>
+                                    <p>
+                                        <a href="https://www.instagram.com/metalloprokat.kz?r=nametag" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://youtu.be/hyOhlwL-pVc" target="_blank"><i class="fab fa-youtube"></i></a>
+                                        <a href="https://www.facebook.com/metalloprokat.kz/" target="_blank"><i class="fab fa-facebook"></i></a>
+                                    </p>
+                                    <button id="main-lead-btn" class="btn btn-danger" data-id="0" data-toggle="modal" data-target="#modal" type="button">Оставить заявку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <div id="content">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="left-side">
+                                <div id='cssmenu'>
+                                    <ul>
+                                        @foreach($cats as $cat)
+                                            @if($cat->isRoot())
+                                                <li class='has-sub'><a href='{{ $cat->url() }}'><span>{{ $cat->title }}</span></a>
+                                                    @if($cat->hasChildren())
+                                                        <ul>
+                                                            @foreach($cat->children->sortby('position') as $child)
+                                                                @if(count($child->children) == 0)
+                                                                    <li><a href="{{ $child->url() }}">{{ $child->title }}</a></li>
+                                                                @else
+                                                                    <li class='has-sub'><a href='{{ $child->url() }}'><span>{{ $child->title }}</span></a>
+                                                                        <ul>
+                                                                            @foreach($child->children->sortby('position') as $grandson)
+                                                                                <li><a href="{{ $grandson->url() }}">{{ $grandson->title }}</a></li>
+                                                                            @endforeach
+                                                                        </ul>
+                                                                    </li>
+                                                                @endif
+                                                            @endforeach
+                                                        </ul>
                                                     @endif
-                                                @endforeach
-                                            </ul>
-                                        @endif
-                                    </li>
-                                @endif
-                            @endforeach
-                        </ul>
+                                                </li>
+                                            @endif
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="content">
+                                @yield('content')
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-9">
-                <div class="content">
-                    @yield('content')
+                <div class="our_map">
+                    @if($agent->isMobile())
+                        <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001038533690/center/76.95560216903688,43.266346950439264/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div style="max-width: 100%;" class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.955605,43.266193/zoom/16/routeTab/rsType/bus/to/76.955605,43.266193╎KAZMETALLSTAL-ALMATY, торговая компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до KAZMETALLSTAL-ALMATY, торговая компания</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":440,"height":200,"borderColor":"#a3a3a3","pos":{"lat":43.266346950439264,"lon":76.95560216903688,"zoom":16},"opt":{"city":"almaty"},"org":[{"id":"70000001038533690"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+                    @else
+                        <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001038533690/center/76.95560216903688,43.266346950439264/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.955605,43.266193/zoom/16/routeTab/rsType/bus/to/76.955605,43.266193╎KAZMETALLSTAL-ALMATY, торговая компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до KAZMETALLSTAL-ALMATY, торговая компания</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width": "100%","height":"350px","borderColor":"#a3a3a3","pos":{"lat":43.266346950439264,"lon":76.95560216903688,"zoom":18},"opt":{"city":"almaty"},"org":[{"id":"70000001038533690"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+                    @endif
                 </div>
-            </div>
-        </div>
 
-        @if(Route::currentRouteName() == 'home')
-        <div class="row" style="margin-bottom: 20px;">
-            <div class="col-md-12">
-                <a href="http://metaloprokat.kz/page/kalkulyator">
-                    <img style="max-width: 100%;" src="{{ asset('img/calc.jpg') }}" alt="">
-                </a>
+                @include('pattern.footer')
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                @if($agent->isMobile())
-                <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001038533690/center/76.95560216903688,43.266346950439264/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div style="max-width: 100%;" class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.955605,43.266193/zoom/16/routeTab/rsType/bus/to/76.955605,43.266193╎KAZMETALLSTAL-ALMATY, торговая компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до KAZMETALLSTAL-ALMATY, торговая компания</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":440,"height":200,"borderColor":"#a3a3a3","pos":{"lat":43.266346950439264,"lon":76.95560216903688,"zoom":16},"opt":{"city":"almaty"},"org":[{"id":"70000001038533690"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
-                @else
-                <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001038533690/center/76.95560216903688,43.266346950439264/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.955605,43.266193/zoom/16/routeTab/rsType/bus/to/76.955605,43.266193╎KAZMETALLSTAL-ALMATY, торговая компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до KAZMETALLSTAL-ALMATY, торговая компания</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":440,"height":300,"borderColor":"#a3a3a3","pos":{"lat":43.266346950439264,"lon":76.95560216903688,"zoom":16},"opt":{"city":"almaty"},"org":[{"id":"70000001038533690"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
-                @endif
-            </div>
-            <div class="col-md-6"></div>
-        </div>
-        @endif
     </div>
-
-    @include('pattern.footer')
 </div>
 <!-- Modal -->
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -246,6 +223,23 @@
             autoplay: true,
             arrows : true,
             dots : false,
+        });
+
+        $('.spec_slider').slick({
+            autoplay: false,
+            arrows : true,
+            dots : false,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4
+        });
+
+        $('.cert_slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
         });
     });
 </script>

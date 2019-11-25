@@ -12,7 +12,7 @@ class BaseController extends Controller
 {
     public function __construct()
     {
-        $cats = Category::where('active', 1)->get()->toTree();
+        $cats = Category::where('parent_id', null)->get();
         $pages = Page::all();
         $agent = new Agent();
         View::share('cats', $cats);

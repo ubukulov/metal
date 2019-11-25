@@ -42,6 +42,9 @@ a {
   padding: 5px 0px;
   border-bottom: 1px solid #ccc;
 }
+.main_slider {
+  margin-bottom: 50px;
+}
 .slider {
   margin-bottom: 30px;
 }
@@ -66,7 +69,7 @@ header {
   border-bottom: 10px solid #ccc;
 }
 header .header {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   max-width: 100%;
   padding: 10px 10px;
@@ -85,7 +88,7 @@ header .header .pr button {
   border-color: #562118;
 }
 #content {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 .left-side {
@@ -103,7 +106,7 @@ header .header .pr button {
   margin-right: 10px;
 }
 .content .cat-block .cat-im {
-  height: 280px;
+  height: 300px;
   max-width: 100%;
 }
 .content .cat-block .cat-im img {
@@ -112,6 +115,18 @@ header .header .pr button {
 .content .cat-block .cat-title {
   background: #DDD3D1;
   padding: 10px;
+}
+.content .spec_pred {
+  margin-bottom: 50px;
+}
+.content .spec_pred h2 {
+  color: orange;
+}
+.content .certificates {
+  margin: 50px 0px;
+}
+.content .certificates .cert_slider img {
+  height: 550px !important;
 }
 #footer {
   background: url("../img/footer_bg.jpg") center center no-repeat;

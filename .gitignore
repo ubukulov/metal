@@ -14,3 +14,4 @@ yarn-error.log
 .idea
 .idea/workspace.xml
 /public/uploads/*
+/public/files
