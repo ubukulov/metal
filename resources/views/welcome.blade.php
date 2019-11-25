@@ -17,14 +17,27 @@
         <h2>Спецпредложения</h2>
         <div class="spec_slider">
             <div>
-                <a href="http://metaloprokat.kz/catalog/asbocementnyy-list" target="_blank">
-                    <img src="{{ asset('img/spec/asbest.jpg') }}" alt="">
-                </a>
+                <div class="spec_txt">
+                    <p>Размер:1500х3000мм</p>
+                    <p>Цена: от 16000 тенге за лист</p>
+                </div>
+                <div>
+                    <a href="http://metaloprokat.kz/catalog/asbocementnyy-list" target="_blank">
+                        <img src="{{ asset('img/spec/asbest.jpg') }}" alt="">
+                    </a>
+                </div>
+
             </div>
             <div>
-                <a href="http://www.metaloprokat.kz/catalog/vus-izolyaciya" target="_blank">
-                    <img src="{{ asset('img/spec/vuz_izolyacia.jpg') }}" alt="">
-                </a>
+                <div class="spec_txt">
+                    <p>Диаметр трубы и толщина стенки 133*4,5мм.</p>
+                    <p>Цена от 4965 тенге/м</p>
+                </div>
+                <div>
+                    <a href="http://www.metaloprokat.kz/catalog/vus-izolyaciya" target="_blank">
+                        <img src="{{ asset('img/spec/vuz_izolyacia.jpg') }}" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </div>

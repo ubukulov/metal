@@ -122,6 +122,14 @@ header .header .pr button {
 .content .spec_pred h2 {
   color: orange;
 }
+.content .spec_pred .spec_txt {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 348px;
+  max-width: 100%;
+  color: #fff;
+  text-align: center;
+}
 .content .certificates {
   margin: 50px 0px;
 }
