@@ -3,14 +3,17 @@
     {!! Breadcrumbs::render('catalog.view', $category) !!}
     <div class="row">
         @foreach($category->children->sortby('position') as $cat)
-            <div class="col-md-4 cat-block" style="margin-bottom: 20px;">
-                <div class="cat-im">
-                    <a href="{{ $cat->url() }}"><img src="{{ $cat->image() }}" alt=""></a>
+            <div class="col-md-3 text-center">
+                <div class="cat-block mb-2">
+                    <div class="cat-im">
+                        <a href="{{ $cat->url() }}"><img src="{{ $cat->image() }}" alt=""></a>
+                    </div>
+
+                    <div class="cat-title">
+                        <a href="{{ $cat->url() }}">{{ $cat->title }}</a>
+                    </div>
                 </div>
 
-                <div class="cat-title">
-                    <a href="{{ $cat->url() }}">{{ $cat->title }}</a>
-                </div>
             </div>
         @endforeach
     </div>
