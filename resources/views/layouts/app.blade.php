@@ -224,14 +224,19 @@
             arrows : true,
             dots : false,
         });
+        $('.del_slider').slick({
+            autoplay: true,
+            arrows : true,
+            dots : false,
+        });
 
         $('.spec_slider').slick({
             autoplay: true,
             arrows : true,
             dots : false,
             infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 4
+            slidesToShow: 2,
+            slidesToScroll: 2
         });
 
         $('.cert_slider').slick({

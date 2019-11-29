@@ -10,6 +10,11 @@
                     <img style="max-width: 100%;" src="{{ asset('img/banner4.png') }}" alt="">
                 </a>
             </div>
+            <div class="slider_content">
+                <a href="http://metaloprokat.kz/catalog/alyuminievaya-plita-i-list" target="_blank">
+                    <img style="max-width: 100%;" src="{{ asset('img/banner5.jpg') }}" alt="">
+                </a>
+            </div>
         </div>
     </div>
 
@@ -19,7 +24,7 @@
             <div>
                 <div class="spec_txt">
                     <p>Размер:1500х3000мм</p>
-                    <p>Цена: от 16000 тенге за лист</p>
+                    <p>Цена от 16 000 тенге за лист</p>
                 </div>
                 <div>
                     <a href="http://metaloprokat.kz/catalog/asbocementnyy-list" target="_blank">
@@ -31,11 +36,22 @@
             <div>
                 <div class="spec_txt">
                     <p>Диаметр трубы и толщина стенки 133*4,5мм.</p>
-                    <p>Цена от 4965 тенге/м</p>
+                    <p>Цена от 4 965 тенге/м</p>
                 </div>
                 <div>
                     <a href="http://www.metaloprokat.kz/catalog/vus-izolyaciya" target="_blank">
                         <img src="{{ asset('img/spec/vuz_izolyacia.jpg') }}" alt="">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="spec_txt">
+                    <p>Лист алюминиевый гладкий 2*1000*2000</p>
+                    <p>Цена 13 804 тг с НДС за один лист.</p>
+                </div>
+                <div>
+                    <a href="http://www.metaloprokat.kz/catalog/vus-izolyaciya" target="_blank">
+                        <img src="{{ asset('img/spec/list_al.jpg') }}" alt="">
                     </a>
                 </div>
             </div>
@@ -82,6 +98,20 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="delivery">
+        <div class="del_slider">
+            <div class="d_slider_c">
+                <img src="{{ asset('img/tex1.jpg') }}" alt="">
+            </div>
+            <div class="d_slider_c">
+                <img src="{{ asset('img/tex2.jpg') }}" alt="">
+            </div>
+            <div class="d_slider_c">
+                <img src="{{ asset('img/tex3.jpg') }}" alt="">
             </div>
         </div>
     </div>
