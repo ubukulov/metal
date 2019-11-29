@@ -226,7 +226,7 @@
         });
 
         $('.spec_slider').slick({
-            autoplay: false,
+            autoplay: true,
             arrows : true,
             dots : false,
             infinite: true,
@@ -235,6 +235,7 @@
         });
 
         $('.cert_slider').slick({
+            autoplay: true,
             dots: true,
             infinite: true,
             speed: 500,
