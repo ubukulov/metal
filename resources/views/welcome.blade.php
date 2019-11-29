@@ -102,7 +102,7 @@
         </div>
     </div>
 
-    <div class="delivery">
+    <div class="delivery" style="margin-bottom: 30px;">
         <div class="del_slider">
             <div class="d_slider_c">
                 <img src="{{ asset('img/tex1.jpg') }}" alt="">
